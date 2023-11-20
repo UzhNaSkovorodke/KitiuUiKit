@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react'
 import s from './Input.module.css'
-import { classNames } from '@shared/lib/classNames/classNames.ts'
+import { classNames } from "@/shared/lib/classNames/classNames";
 
 export interface InputProps extends React.HTMLProps<HTMLInputElement> {
   isError?: boolean
@@ -31,7 +31,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
       <div className={s.input_wrapper}>
         <input
           autoComplete="on"
-          className={classNames([s.input, s[`input__${classNameStatus}`]], {}, [className ?? ''])}
+          className={classNames([s.input, s[`input__${classNameStatus}`]],  [className ?? ''])}
           style={{
             height: height,
             borderRadius: radius,

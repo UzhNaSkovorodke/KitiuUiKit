@@ -29,8 +29,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props) => {
     <button
       className={classNames(
         [cls.button],
-        { [cls[props.theme ?? '']]: true }, //TIPS: использовать enum или as const как тему для button
-        [className ?? '']
+        [className ?? '', cls[props.theme ?? '']]
       )}
       tabIndex={props.tabIndex}
       style={{

@@ -1,7 +1,7 @@
-import { Input, type InputProps } from 'shared/ui/Input/Input.tsx'
 import { forwardRef, useState } from 'react'
-import { Icon } from 'shared/ui/Icon/Icon.tsx'
 import s from './InputPassword.module.css'
+import { Input, InputProps } from "@/shared/ui/Input/Input";
+import { Icon } from "@/shared/ui/Icon";
 interface IInputPassword extends InputProps {}
 
 export const InputPassword = forwardRef<HTMLInputElement, InputProps>(function InputPassword(
